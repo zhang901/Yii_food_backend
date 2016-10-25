@@ -1,0 +1,35 @@
+An MD5 hashed password is not reversible. (MD5 is hashing, and not really encrypting, so there's a subtle difference). And yes you'll definitely want to provide a password "reset" process (and not simply email the password).
+
+To give you a high level workflow for secure password resets...
+
+When user asks to reset their password, make them enter their email address
+
+Don't indicate if that email address was valid or not (just tell them that an email was dispatched). This is open for debate as it lowers usability (i.e. I have no idea which email I registered with) but it offers less information to people trying to gather information on which emails are actually registered on your site.
+
+Generate a token (maybe hash a timestamp with a salt) and store it into the database in the user's record.
+
+Send an email to the user along with a link to your http*s* reset page (token and email address in the url).
+
+Use the token and email address to validate the user.
+
+Let them choose a new password, replacing the old one.
+
+Additionally, it's a good idea to expire those tokens after a certain time frame, usually 24 hours.
+
+Optionally, record how many "forgot" attempts have happened, and perhaps implement more complex functionality if people are requesting a ton of emails.
+
+Optionally, record (in a separate table) the IP address of the individual requesting the reset. Increment a count from that IP. If it ever reaches more than, say, 10... Ignore their future requests.
+
+To give you a little more detail into hashing...
+
+When you hash a value like a password using the md5() function in PHP, the final value is going to be the same for that password no matter which server you run it on. (So there's one difference we can see right away between hashing and encryption... There's no private/public key involved).
+
+So this is where you'll see people mention a vulnerability to rainbow tables. A very basic explanation of a rainbow table is... You md5() hash a bunch of dictionary words (weak passwords) in order to get their md5() hashed values. Put those in a database table (rainbow table).
+
+Now, if you compromise a web site's database, you can run the users' hashed passwords against your rainbow table to (in essence) "reverse" the hash back to a password. (You're not really "reversing" the hash... But you get the idea).
+
+That's where "salting" your passwords is best practice. This means (again, very basic idea here) that you append a random value to the users' passwords before you hash it. Now, when the rainbow table is run against your database, it's not as easily "reversed" because the md5() hash of "password" is different than "password384746".
+
+Here's a nice SO Q/A that should help. Secure hash and salt for PHP passwords
+
+http://stackoverflow.com/questions/6585649/php-forgot-password-function

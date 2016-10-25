@@ -1,0 +1,11 @@
+.cke_charcount {
+    display:block;
+    float:right;
+    margin-top:5px;
+    margin-right:3px;
+    color:#60676A;
+}
+.cke_charcount span.cke_charcount_count,
+.cke_charcount span.cke_charcount_limit  {
+    font-style: italic;
+}

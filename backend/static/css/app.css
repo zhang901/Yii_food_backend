@@ -1,0 +1,144 @@
+.container{
+    width: 100%;
+}
+
+.no-border-radius{
+    border-radius: 0;
+}
+
+.line{
+    margin: 5px 0;
+}
+
+#logo{
+    color: #f7cf83;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 32px;
+}
+
+#footer{
+    margin-top: 100px;
+}
+
+.navbar{
+    min-height: 30px;
+}
+
+.navbar-nav > li > a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4.title{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 15px;
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    transform: translate(-300px, 0) scale(4);
+    font-size: 23px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.image-thumb{
+    width: 64px;
+    height: 64px;
+}
+
+.image-tiny-thumb{
+    width: 16px;
+    height: 16px;
+    margin: 0px auto;
+}
+
+.image-small-thumb{
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.space{
+    width: 100%;
+    height: 15px;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+table.table tr > td > a:hover{
+    text-decoration: none;
+}
+
+.language .title{
+    padding: 5px;
+    background-color: #1198B6;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.language hr.line{
+    margin-top: 0;
+}
+
+.item{
+    margin-bottom: 5px;
+}
+
+.item-image{
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.item-name{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.line-bottom{
+    border-bottom: 1px solid #ccc;
+
+}
+
+.item-price label{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.strike{
+    text-decoration: line-through;
+}
+
+.red{
+    color: #F00;
+}
+
+.table-bordered tr th{
+    background-color: #CCC;
+}
+
+.center{
+    text-align: center;
+}
+
+.error-label{
+    color: #F00;
+    display: none;
+}

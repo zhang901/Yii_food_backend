@@ -1,0 +1,99 @@
+.padding-decrease .col-xs-1, .padding-decrease .col-xs-2, .padding-decrease .col-xs-3, .padding-decrease .col-xs-4, .padding-decrease .col-xs-5, .padding-decrease .col-xs-6, .padding-decrease .col-xs-7, .padding-decrease .col-xs-8, .padding-decrease .col-xs-9, .padding-decrease .col-xs-10, .padding-decrease .col-xs-11{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.padding-decrease .col-xs-1:first-child, .padding-decrease .col-xs-2:first-child, .padding-decrease .col-xs-3:first-child, .padding-decrease .col-xs-4:first-child, .padding-decrease .col-xs-5:first-child, .padding-decrease .col-xs-6:first-child, .padding-decrease .col-xs-7:first-child, .padding-decrease .col-xs-8:first-child, .padding-decrease .col-xs-9:first-child, .padding-decrease .col-xs-10:first-child, .padding-decrease .col-xs-11:first-child{
+    padding-left: 15px;
+}
+.padding-decrease .col-xs-1:last-child, .padding-decrease .col-xs-2:last-child, .padding-decrease .col-xs-3:last-child, .padding-decrease .col-xs-4:last-child, .padding-decrease .col-xs-5:last-child, .padding-decrease .col-xs-6:last-child, .padding-decrease .col-xs-7:last-child, .padding-decrease .col-xs-8:last-child, .padding-decrease .col-xs-9:last-child, .padding-decrease .col-xs-10:last-child, .padding-decrease .col-xs-11:last-child{
+    padding-right: 15px;
+}
+
+.navbar-default {
+    background-color: #1198B6;
+    border-color: #1198B6;
+    border-bottom-color: #03728b;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #FFFFFF;
+    color: #1198B6;
+    border-left: 1px solid #1198B6;
+    border-right: 1px solid #1198B6;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #FFFFFF;
+    color: #1198B6;
+}
+
+.dropdown-menu {
+    border: 1px solid #1198B6;
+}
+
+.dropdown-menu > li > a {
+    color: #1198BB;
+}
+
+.form-control {
+    padding: 6px;
+}
+
+
+/* Drop-down submenu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #1198B6;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #1198B6;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
